@@ -12,7 +12,7 @@ To begin using our API, you will need the following:
 
 1.	A FXCM account. You can apply for a demo account <a href="https://www.fxcm.com/">here</a> 
 2.	A persistent access token. You can generate one from the <a href="https://tradingstation.fxcm.com/">Trading Station web</a>. Click on User Account > Token Management on the upper right hand of the website.
-3.	Download Rest API word documents at <a href="https://apiwiki.fxcorporate.com/api/RestAPI/Socket%20REST%20API%20Specs.docx">here</a>
+3.	Download Rest API word documents at <a href="https://apiwiki.fxcorporate.com/api/RestAPI/Socket%20REST%20API%20Specs.pdf">here</a>
 4. Documents in Swagger format at <a href="https://fxcmapi.github.io/rest-api-docs/#">here</a> 
 5. Start coding.  You will need to reference the <a href="https://socket.io/docs/client-api/">socket.io library</a> in your code. 
    a.	Using Javascript, click <a href="https://www.npmjs.com/package/socket.io">here</a>
