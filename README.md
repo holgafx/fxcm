@@ -1,4 +1,4 @@
-"# RestAPI" 
+# RestAPI
 
 Our REST API is a web-based API using a Websocket connection and was developed with algorithmic trading in mind. 
 
