@@ -12,7 +12,7 @@ With the use of the socket.io library, the API has streaming capability and will
 1.	A FXCM account. You can apply for a demo account <a href="https://www.fxcm.com/">here</a> 
 2.	A persistent access token. You can generate one from the <a href="https://tradingstation.fxcm.com/">Trading Station web</a>. Click on User Account > Token Management on the upper right hand of the website.
 3.	Download Rest API word documents at <a href="https://apiwiki.fxcorporate.com/api/RestAPI/Socket%20REST%20API%20Specs.pdf">here</a>
-4. Documents in Swagger format at <a href="https://fxcmapi.github.io/rest-api-docs/#">here</a> 
+4. Documents in Swagger format at <a href="https://fxcm.github.io/rest-api-docs/#">here</a> 
 5. Start coding.  You will need to reference the <a href="https://socket.io/docs/client-api/">socket.io library</a> in your code. 
    a.	Using Javascript, click <a href="https://www.npmjs.com/package/socket.io">here</a>
    b.	 Using Python, click <a href="https://pypi.python.org/pypi/socketIO-client">here</a>
