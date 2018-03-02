@@ -29,7 +29,7 @@ what is <a href="https://www.quantstart.com/qstrader">QSTrader?</a>
 4. One video demonstrate how to backtest strategies in Visual Studio via FXCM data On QuantConnect LEAN platform at <a href="https://www.youtube.com/watch?v=m6llfznP4d4">here</a>
 
 ## Note:
-This is for personal use and abides by our [EULA](https://www.fxcm.com/uk/forms/eula/)
+o	This is for personal use and abides by our [EULA](https://www.fxcm.com/uk/forms/eula/)
 
-For more information, you may contact us: api@fxcm.com
+o	For more information, you may contact us: api@fxcm.com
 
