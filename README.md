@@ -18,6 +18,7 @@ With the use of the socket.io library, the API has streaming capability and will
    b.	 Using Python, click <a href="https://pypi.python.org/pypi/socketIO-client">here</a>
 6. Sample code for Python at <a href="https://github.com/fxcm/fxcm-api-rest-python3-example">here</a> 
 7. Sample code for Java Script at <a href="https://github.com/fxcm/fxcm-api-rest-nodejs-example">here</a>
+8. Sample code in Netbeans Maven project at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
 
 ## Real Case Study:
 
