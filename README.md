@@ -31,8 +31,6 @@ Clients should establish a persistent WebSocket connection using socket.io libra
 | Content-Type | Media type of the request | application/x-www-form-urlencoded | Y |
 | Authorization | Authorization string containing “Bearer “, ID of socket.io connection and persistent token| 'Bearer ' + socket_id + api_token | Y |
 
-Authorization string containing 'Bearer ' + socket_id + api_token
-
       Sample Request
       GET /socket.io/?access_token=cj5wedhq3007v61fe935ihqed&EIO=3&transport=polling&t=Lsd_lZY&b64=1 
       HTTP/1.1 
