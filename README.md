@@ -41,7 +41,7 @@ A trade id is not generated until after order is executed. You have to subscribe
       205900","currency":"EUR/USD","isBuy":true,"buy":1.16079,"sell":0,"type":"LE","status":1,"amountK
       ":1,"currencyPoint":0.1,"stopMove":0,"stop":0,"stopRate":0,"limit":0,"limitRate":0,"isEntryOrder
       ":true,"ocoBulkId":0,"isNetQuantity":false,"isLimitOrder":true,"isStopOrder":false,"isELSOrder":
-      false,"stopPegBaseType":
+      false,"stopPegBaseType":-1,"limitPegBaseType":-1,"range":0}]
 
 Furthermore, a single market order can have many TradeIDs, if they are partial fills or closing of other orders. in this case, its more approriate to provide the OrderID which ties back to that spcific market order request, from there you can join this OrderID to any associated.
 
