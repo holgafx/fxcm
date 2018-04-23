@@ -22,9 +22,11 @@ With the use of the socket.io library, the API has streaming capability and will
 
 ## Subscribe vs snapshot:
 FXCM Rest API provides two ways to deliever data. susbcribe vs snapshot.
+
 After susbcribe, data will be pushed to your socket whenever there is an update. You can susbcribe Market data stream /susbcribe or live table update /trading/susbcribe. You can also unsubscribe.
 You can request a snapshot of trading tables via /trading/get_model. 
-Model choices: 'Offer', 'OpenPosition', 'ClosedPosition', 'Order', 'Summary', 'LeverageProfile', 'Account', 'Properties'.   
+
+      Model choices: 'Offer', 'OpenPosition', 'ClosedPosition', 'Order', 'Summary', 'LeverageProfile', 'Account', 'Properties'.   
 
 ## Real Case Study:
 
