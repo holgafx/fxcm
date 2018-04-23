@@ -20,6 +20,12 @@ With the use of the socket.io library, the API has streaming capability and will
 7. Sample code for Java Script at <a href="https://github.com/fxcm/fxcm-api-rest-nodejs-example">here</a>
 8. Sample code in Netbeans Maven project at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
 
+## Subscribe vs snapshot:
+FXCM Rest API provides two ways to deliever data. susbcribe vs snapshot.
+After susbcribe, data will be pushed to your socket whenever there is an update. You can susbcribe Market data stream /susbcribe or live table update /trading/susbcribe. You can also unsubscribe.
+You can request a snapshot of trading tables via /trading/get_model. 
+Model choices: 'Offer', 'OpenPosition', 'ClosedPosition', 'Order', 'Summary', 'LeverageProfile', 'Account', 'Properties'.   
+
 ## Real Case Study:
 
 1. Learn how to run BT backtest on FXCM historical data via RestAPI at <a href="https://apiwiki.fxcorporate.com/api/StrategyRealCaseStudy/RestAPI/BT strategy on FXCM data.zip">here</a>. 
