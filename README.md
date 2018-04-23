@@ -28,6 +28,26 @@ You can request a snapshot of trading tables via /trading/get_model.
 
       Model choices: 'Offer', 'OpenPosition', 'ClosedPosition', 'Order', 'Summary', 'LeverageProfile', 'Account', 'Properties'.   
 
+## OrderID vs TradeID:
+OrderID and TradeID are different.
+In Market order, an order id is created straightaway and it is in callback immediately. 
+
+      {"response":{"executed":true},"data":{"type":0,"orderId":81712802}}
+
+A trade id is not generated until after order is executed. You have to subscribe the order table and listing the live update and look up the trade id. You will not get trade id in snapshot, because that information was gone when you submit the request. 
+
+      "orders":[{"t":3,"ratePrecision":5,"orderId":"236780744","tradeId":"123022436","time":"101720171
+      03642","accountName":"01073265","accountId":"1073265","timeInForce":"GTD","expireDate":"10182017
+      205900","currency":"EUR/USD","isBuy":true,"buy":1.16079,"sell":0,"type":"LE","status":1,"amountK
+      ":1,"currencyPoint":0.1,"stopMove":0,"stop":0,"stopRate":0,"limit":0,"limitRate":0,"isEntryOrder
+      ":true,"ocoBulkId":0,"isNetQuantity":false,"isLimitOrder":true,"isStopOrder":false,"isELSOrder":
+      false,"stopPegBaseType":
+
+Furthermore, a single market order can have many TradeIDs, if they are partial fills or closing of other orders. in this case, its more approriate to provide the OrderID which ties back to that spcific market order request, from there you can join this OrderID to any associated.
+
+In entry order, an order ID is in callback function. You can also see it on order table sanpshot. but you will not get TradeID until order been executed. 
+
+
 ## Real Case Study:
 
 1. Learn how to run BT backtest on FXCM historical data via RestAPI at <a href="https://apiwiki.fxcorporate.com/api/StrategyRealCaseStudy/RestAPI/BT strategy on FXCM data.zip">here</a>. 
