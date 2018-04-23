@@ -20,6 +20,27 @@ With the use of the socket.io library, the API has streaming capability and will
 7. Sample code for Java Script at <a href="https://github.com/fxcm/fxcm-api-rest-nodejs-example">here</a>
 8. Sample code in Netbeans Maven project at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
 
+## How to connect:
+Clients should establish a persistent WebSocket connection using socket.io library. All non-solicited updates will be sent over this connection. Client requests are to be sent via normal HTTP messages. Every HTTP message must contain following parameters
+
+| Header | Description | Values | Req’d |
+| --- | --- |--- |--- |
+| HTTP version | Version of HTTP used | HTTP/1.1 | Y |
+| User-Agent | Identification of the client software | xxxxxx_software | Y |
+| Accept | Acceptable response MIME type | application/json | Y |
+| Content-Type | Media type of the request | application/x-www-form-urlencoded | Y |
+| Authorization | Authorization string containing “Bearer “, ID of socket.io connection and persistent token| 'Bearer ' + socket_id + api_token | Y |
+
+Authorization string containing 'Bearer ' + socket_id + api_token
+
+      Sample Request
+      GET /socket.io/?access_token=cj5wedhq3007v61fe935ihqed&EIO=3&transport=polling&t=Lsd_lZY&b64=1 
+      HTTP/1.1 
+      User-Agent: node-XMLHttpRequest 
+      Accept: */* 
+      Host: api.fxcm.com 
+      Connection: close
+
 ## Subscribe vs snapshot:
 FXCM Rest API provides two ways to deliever data. susbcribe vs snapshot.
 
