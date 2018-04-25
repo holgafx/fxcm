@@ -55,12 +55,21 @@ In Market order, an order id is created straightaway and it is in callback immed
 
 A trade id is not generated until after order is executed. You have to subscribe the order table and listing the live update and look up the trade id. You will not get trade id in snapshot, because that information was gone when you submit the request. 
 
-      "orders":[{"t":3,"ratePrecision":5,"orderId":"236780744","tradeId":"123022436","time":"101720171
-      03642","accountName":"01073265","accountId":"1073265","timeInForce":"GTD","expireDate":"10182017
-      205900","currency":"EUR/USD","isBuy":true,"buy":1.16079,"sell":0,"type":"LE","status":1,"amountK
-      ":1,"currencyPoint":0.1,"stopMove":0,"stop":0,"stopRate":0,"limit":0,"limitRate":0,"isEntryOrder
-      ":true,"ocoBulkId":0,"isNetQuantity":false,"isLimitOrder":true,"isStopOrder":false,"isELSOrder":
-      false,"stopPegBaseType":-1,"limitPegBaseType":-1,"range":0}]
+      Examples:
+      Subscribing for Orders table:
+      POST /trading/subscribe
+      models=Order
+      
+      Placing Market order:
+      POST /trading/open_trade
+      account_id=1537581&symbol=EUR%2FUSD&is_buy=false&rate=0&amount=5&order_type=AtMarket&time_in_force=GTC
+
+      Response from server:
+      {"executed":true}{"type":0,"orderId":390285837}
+
+      Received Order record from /trading/subscribe with order_id and trade_id:
+      {"t":3,"ratePrecision":5,"orderId":"390285837","tradeId":"170162801","time":"04252018120716391","accountName":"01537581","accountId":"1537581","timeInForce":"GTC","expireDate":"","currency":"EUR/USD","isBuy":false,"buy":0,"sell":1.21818,"type":"OM","status":2,"amountK":5,"currencyPoint":0.5,"stopMove":0,"stop":0,"stopRate":0,"limit":0,"limitRate":0,"isEntryOrder":false,"ocoBulkId":0,"isNetQuantity":false,"isLimitOrder":false,"isStopOrder":false,"isELSOrder":false,"stopPegBaseType":-1,"limitPegBaseType":-1,"range":0,"action":"I"}
+
 
 Furthermore, a single market order can have many TradeIDs, if they are partial fills or closing of other orders. in this case, its more approriate to provide the OrderID which ties back to that spcific market order request, from there you can join this OrderID to any associated.
 
