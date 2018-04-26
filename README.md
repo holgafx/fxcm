@@ -43,6 +43,7 @@ Clients should establish a persistent WebSocket connection using socket.io libra
 "t" is the table id: 
 
 | t | table |
+| --- | --- |
 | 1 | Open Position |
 | 2 | Closed Position |
 | 3 | Order |
