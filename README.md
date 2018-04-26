@@ -39,6 +39,16 @@ Clients should establish a persistent WebSocket connection using socket.io libra
       Host: api.fxcm.com 
       Connection: close
 
+## What 't' means
+"t" is the table id: 
+
+| t | table |
+| 1 | Open Position |
+| 2 | Closed Position |
+| 3 | Order |
+| 5 | Summary |
+| 6 | Account |
+
 ## Subscribe vs snapshot:
 FXCM Rest API provides two ways to deliever data. susbcribe vs snapshot.
 
