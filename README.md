@@ -86,6 +86,21 @@ Furthermore, a single market order can have many TradeIDs, if they are partial f
 
 In entry order, an order ID is in callback function. You can also see it on order table sanpshot. but you will not get TradeID until order been executed. 
 
+## limitation on historical candle download per request:
+
+| Time-frame | max days back |
+| --- | --- |
+| m1 | 16 |
+| m5 | 56 |
+| m15 | 212 |
+| m30 | 316 |
+| h1 | 624 |
+| h2 | 1224 |
+| h3 | 2056 |
+| h4 | 2664 |
+| h6 | 3632 |
+| h8 | 5128 |
+| D1, W1, M1 | no limit |
 
 ## Real Case Study:
 
