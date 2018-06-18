@@ -88,19 +88,19 @@ In entry order, an order ID is in callback function. You can also see it on orde
 
 ## limitation on historical candle download per request:
 
-| Time-frame | max days back |
-| --- | --- |
-| m1 | 16 |
-| m5 | 56 |
-| m15 | 212 |
-| m30 | 316 |
-| h1 | 624 |
-| h2 | 1224 |
-| h3 | 2056 |
-| h4 | 2664 |
-| h6 | 3632 |
-| h8 | 5128 |
-| D1, W1, M1 | no limit |
+| Time-frame | max days back | max num |
+| --- | --- | --- |
+| m1 | 16 | 10,000 |
+| m5 | 56 | 10,000 |
+| m15 | 212 | 10,000 |
+| m30 | 316 | 10,000 |
+| h1 | 624 | 10,000 |
+| h2 | 1224 | 10,000 |
+| h3 | 2056 | 10,000 |
+| h4 | 2664 | 10,000 |
+| h6 | 3632 | 10,000 |
+| h8 | 5128 | 10,000 |
+| D1, W1, M1 | no limit | no limit |
 
 ## Real Case Study:
 
