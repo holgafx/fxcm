@@ -12,13 +12,12 @@ With the use of the socket.io library, the API has streaming capability and will
 1.	A FXCM account. You can apply for a demo account [here](https://www.fxcm.com/uk/algorithmic-trading/api-trading/) 
 2.	A persistent access token. You can generate one from the <a href="https://tradingstation.fxcm.com/">Trading Station web</a>. Click on User Account > Token Management on the upper right hand of the website. For Live account, please send your username to api@fxcm.com, we will need to enable Rest API access. For demo account, Rest API access was enabled by default.
 3.	Download Rest API word documents at <a href="https://apiwiki.fxcorporate.com/api/RestAPI/Socket%20REST%20API%20Specs.pdf">here</a>
-4. Documents in Swagger format at <a href="https://fxcm.github.io/rest-api-docs/#">here</a> 
-5. Start coding.  You will need to reference the <a href="https://socket.io/docs/client-api/">socket.io library</a> in your code. 
+4. Start coding.  You will need to reference the <a href="https://socket.io/docs/client-api/">socket.io library</a> in your code. 
    a.	Using Javascript, click <a href="https://www.npmjs.com/package/socket.io">here</a>
    b.	 Using Python, click <a href="https://pypi.python.org/pypi/socketIO-client">here</a>
-6. Sample code for Python at <a href="https://github.com/fxcm/fxcm-api-rest-python3-example">here</a> 
-7. Sample code for Java Script at <a href="https://github.com/fxcm/fxcm-api-rest-nodejs-example">here</a>
-8. Sample code in Netbeans Maven project at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
+5. Sample code for Python at <a href="https://github.com/fxcm/fxcm-api-rest-python3-example">here</a> 
+6. Sample code for Java Script at <a href="https://github.com/fxcm/fxcm-api-rest-nodejs-example">here</a>
+7. Sample code in Netbeans Maven project at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
 
 ## How to connect:
 Clients should establish a persistent WebSocket connection using socket.io library. All non-solicited updates will be sent over this connection. Client requests are to be sent via normal HTTP messages. Every HTTP message must contain following parameters
