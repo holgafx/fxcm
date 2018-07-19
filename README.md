@@ -101,6 +101,14 @@ In entry order, an order ID is in callback function. You can also see it on orde
 | h8 | 5128 | 10,000 |
 | D1, W1, M1 | no limit | no limit |
 
+## How to place trailing stop 
+
+The fixed trailing stop should be 10 or above, for dynamic trailing stop = 1, number between 2-9 will be rejected. also the parameter is trailing_stop_step
+      
+      Example Entry order with trailing stop of 10 pips:
+      POST /trading/create_entry_order account_id=1537581&symbol=EUR%2FUSD&is_buy=true&rate=1.1655&amount=3&order_type=Entry&time_in_force=GTC&stop=-50&trailing_stop_step=10&is_in_pips=true
+
+
 ## Real Case Study:
 
 1. Learn how to run BT backtest on FXCM historical data via RestAPI at <a href="https://apiwiki.fxcorporate.com/api/StrategyRealCaseStudy/RestAPI/BT strategy on FXCM data.zip">here</a>. 
