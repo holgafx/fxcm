@@ -108,6 +108,21 @@ The fixed trailing stop should be 10 or above, for dynamic trailing stop = 1, nu
       Example Entry order with trailing stop of 10 pips:
       POST /trading/create_entry_order account_id=1537581&symbol=EUR%2FUSD&is_buy=true&rate=1.1655&amount=3&order_type=Entry&time_in_force=GTC&stop=-50&trailing_stop_step=10&is_in_pips=true
 
+## Difference between account name and account ID
+
+There is a difference bewteen account name and account id. usually removing the heading zeros are account ID. and you need to pass account_id when you place orders. You can retrieve this information from /trading/get_model/Accounts.
+
+      Wrong:
+      {"is_buy":false,"account_id":"00654061","symbol":"EUR/USD","rate":1.15,"amount":11,"stop":-40,"is_in_pips":true,"order_type":"AtMarket","time_in_force":"GTC"}
+
+      ERR noExec: /trading/create_entry_order
+      {"code":3,"message":"Amount should be divisible by 10","parameters":["10"]}
+ 
+      Correct:
+      {"is_buy":false,"account_id":"654061","symbol":"EUR/USD","rate":1.15,"amount":11,"stop":-40,"is_in_pips":true,"order_type":"AtMarket","time_in_force":"GTC"}
+      
+      request # 2  has been executed: {
+      "response": {"executed": true}, "data": {"type": 0,"orderId": 194963057}}
 
 ## Real Case Study:
 
