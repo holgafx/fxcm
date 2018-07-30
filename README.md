@@ -8,6 +8,9 @@ We utilize the new OAuth 2.0 specification for authentication via token. This al
 
 With the use of the socket.io library, the API has streaming capability and will push data notifications in a JSON format. Your application will have access to our real-time streaming market data, subscribe in real time access to trading tables and place live trades.
 
+## FXCM Trading hours:
+FXCM's trading hours vary by product. For forex, trading opens on Sundays between 5:00 PM ET and 5:15 PM ET and closes on Fridays around 4:55 PM ET. for CFD, please check [CFD Product Guide.](http://docs.fxcorporate.com/user-guide/ug-cfd-product-guide-ltd-en.pdf)
+
 ## How to start:
 1.	A FXCM account. You can apply for a demo account [here](https://www.fxcm.com/uk/algorithmic-trading/api-trading/) 
 2.	A persistent access token. You can generate one from the <a href="https://tradingstation.fxcm.com/">Trading Station web</a>. Click on User Account > Token Management on the upper right hand of the website. For Live account, please send your username to api@fxcm.com, we will need to enable Rest API access. For demo account, Rest API access was enabled by default.
