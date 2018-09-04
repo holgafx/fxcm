@@ -1,0 +1,10 @@
+{
+  "generator-openapi-repo": {
+    "importExistingSpec": false,
+    "name": "test",
+    "repo": "FXCMAPI/fxcmapi.github.io",
+    "splitSpec": false,
+    "samples": true,
+    "installSwaggerUI": true
+  }
+}
