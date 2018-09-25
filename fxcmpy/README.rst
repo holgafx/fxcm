@@ -79,10 +79,10 @@ Connecting to the server, then boils down to the following line of code.
 
 ::
 
-    for demo account:
+    For demo account:
     con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server=’demo’)
     
-    for real account:
+    For real account:
     con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server=’real’)
 
 However, it is recommended to store the API token in a **configuration
