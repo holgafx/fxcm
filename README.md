@@ -15,6 +15,7 @@ FXCM's trading hours vary by product. For forex, trading opens on Sundays betwee
 1.	Quick start guide in python at [here](https://github.com/fxcm/RestAPI/blob/master/Rest_quick_start_guide_python.docx) 
 2.	Quick start guide in Node.js at [here](https://github.com/fxcm/RestAPI/blob/master/Rest_quick_start_guide_nodejs.docx) 
 3.	Quick start guide in Java at [here](https://github.com/fxcm/RestAPI/blob/master/FXCM%20JAVA%20REST%20API%20QuickStart.pdf)
+4. Java sample code at [here](https://apiwiki.fxcorporate.com/api/RestAPI/JavaRestClient.zip)
 4. C# sample code at [here](https://apiwiki.fxcorporate.com/api/RestAPI/RestAPI_CSharp_sample_code.zip)
 5.	A persistent access token. You can generate one from the <a href="https://tradingstation.fxcm.com/">Trading Station web</a>. Click on User Account > Token Management on the upper right hand of the website. For Live account, please send your username to api@fxcm.com, we will need to enable Rest API access. For demo account, Rest API access was enabled by default.
 6.	Download Rest API word documents at <a href="https://apiwiki.fxcorporate.com/api/RestAPI/Socket%20REST%20API%20Specs.pdf">here</a>
