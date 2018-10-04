@@ -1132,11 +1132,12 @@ class fxcmpy(object):
                                        params=params, protocol='post')
         if 'data' in data and 'orderId' in data['data']:
             order_id = int(data['data']['orderId'])
+			return data
         else:
             self.logger.warn('Missing orderId in servers answer.')
             return 0
 
-        count = 0
+        """count = 0
         order = None
         while count < 10:
             try:
@@ -1148,7 +1149,7 @@ class fxcmpy(object):
                 #order = self.get_order(order_id)
         if order == None:
             self.logger.warn('Can not find Order object, returning None.')
-        return order
+        return order"""
 
     def change_trade_stop_limit(self, trade_id, is_stop, rate, is_in_pips=True,
                                 trailing_step=0):
