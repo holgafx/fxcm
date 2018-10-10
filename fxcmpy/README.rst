@@ -73,17 +73,17 @@ to reference your unique API token.
 
 ::
 
-    TOKEN = YOUR_FXCM_API_TOKEN
+    TOKEN = "YOUR_FXCM_API_TOKEN"
 
 Connecting to the server, then boils down to the following line of code.
 
 ::
 
     For demo account:
-    con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server=’demo’)
+    con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server='demo')
     
     For real account:
-    con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server=’real’)
+    con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server='real')
 
 However, it is recommended to store the API token in a **configuration
 file** which allows for re-usability and hides the token on the GUI
