@@ -1,0 +1,3 @@
+# Python Backtest Examples
+This repo contains single file backtests for algo trading strategies using FXCM’s Python wrapper (fxcmpy).  Please note  backtested results are hypothetical and may not reflect the true performance of a system, as past performance is not indicative of future returns. Additionally, the backtesters included here are meant to provide a quick understanding of a strategy’s behavior overall and not to simulate every aspect of a strategy’s execution (such as transaction costs, market impact, price slippage, etc).
+More backtesting systems will be added over time. Please email api@fxcm.com if you have questions or suggestions!
