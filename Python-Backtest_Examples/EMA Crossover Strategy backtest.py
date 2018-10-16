@@ -28,13 +28,19 @@ df['signal'] = df['position'].diff()
 
 df['difference (pips)'] = (df['askclose'] - df['askopen']) * 100
 
-returns = 0
+Returns = 0
+CountPL=False
 for i, row in df.iterrows():
-    if row['position'] == 1:
+    if CountPL==True:
         returns += (row['difference (pips)'] * pip_cost * lot_size)
         df.loc[i,'total'] = returns
     else:
         df.loc[i,'total'] = returns
+ 
+    if row['position'] == 1:
+        CountPL=True
+    else:
+        CountPL=False 
 		
 fig = plt.figure(figsize=(12,8))
 ax1 = fig.add_subplot(111,  ylabel='GBP/JPY Price')
