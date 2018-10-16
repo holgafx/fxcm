@@ -30,7 +30,7 @@ pricedata = None
 numberofcandles = 300
 
 # Connect to FXCM API
-con = fxcmpy.fxcmpy(access_token=token)
+con = fxcmpy.fxcmpy(access_token=token, log_level="error")
 	
 # This function runs once at the beginning of the strategy to run initial one-time processes/computations
 def Prepare():
